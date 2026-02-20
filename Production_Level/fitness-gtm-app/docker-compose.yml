@@ -1,0 +1,19 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+      - redis
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/fitness
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - JWT_SECRET=supersecret
+
+  mongo:
+    image: mongo
+
+  redis:
+    image: redis
