@@ -1,5 +1,16 @@
 # 🏋️ Fitness GTM App -- Production-Grade Rate Limiter Backend
 
+
+✅ STEP 1: Create Project Folder
+mkdir rate-limiter-app
+cd rate-limiter-app
+✅ STEP 2: Initialize Node Project
+npm init -y
+✅ STEP 3: Install Required Packages
+npm install express ioredis dotenv
+npm install --save-dev nodemon
+npm run dev
+
 ## 📌 Project Overview
 
 This project demonstrates a **production-level backend rate limiting
